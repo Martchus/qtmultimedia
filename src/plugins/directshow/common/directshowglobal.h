@@ -43,6 +43,7 @@
 #include <dshow.h>
 
 #include <QtCore/qglobal.h>
+#include <QtCore/qstring.h>
 #include <QtCore/qloggingcategory.h>
 
 QT_BEGIN_NAMESPACE
