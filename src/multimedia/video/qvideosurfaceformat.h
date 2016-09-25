@@ -44,6 +44,7 @@
 #include <QtCore/qpair.h>
 #include <QtCore/qshareddata.h>
 #include <QtCore/qsize.h>
+#include <QtCore/qstring.h>
 #include <QtGui/qimage.h>
 #include <QtMultimedia/qvideoframe.h>
 
