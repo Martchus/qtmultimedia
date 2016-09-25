@@ -43,6 +43,7 @@
 #include <dshow.h>
 
 #include <QtCore/qglobal.h>
+#include <QtCore/qstring.h>
 
 template <typename T> T *com_cast(IUnknown *unknown, const IID &iid)
 {

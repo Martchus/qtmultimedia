@@ -43,6 +43,7 @@
 #include <dshow.h>
 
 #include <QtCore/qvector.h>
+#include <QtCore/qstring.h>
 
 class DirectShowMediaTypeList : public IUnknown
 {
