@@ -50,9 +50,9 @@
 #include <QOffscreenSurface>
 
 #ifdef MAYBE_ANGLE
-# include <qguiapplication.h>
-# include <qpa/qplatformnativeinterface.h>
-# include <qopenglfunctions.h>
+# include <QtGui/qguiapplication.h>
+# include <QtGui/qpa/qplatformnativeinterface.h>
+# include <QtGui/qopenglfunctions.h>
 # include <EGL/eglext.h>
 #endif
 
