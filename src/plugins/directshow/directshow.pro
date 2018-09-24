@@ -5,6 +5,12 @@ win32:!qtHaveModule(opengl)|qtConfig(dynamicgl) {
     LIBS_PRIVATE += -lgdi32 -luser32
 }
 
+# add library containing IID_IMFVideoDeviceID, IID_IMFVideoPresenter, IID_IMFTopologyServiceLookupClient
+# and IID_IMFTopologyServiceLookupClient
+mingw {
+    LIBS_PRIVATE += -lamstrmid
+}
+
 HEADERS += dsserviceplugin.h
 SOURCES += dsserviceplugin.cpp
 
