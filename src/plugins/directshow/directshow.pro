@@ -16,8 +16,11 @@ mingw {
     DEFINES += NO_DSHOW_STRSAFE
 }
 
+# Link against amstrmid for IID_IMFVideoDeviceID, IID_IMFVideoPresenter, IID_IMFTopologyServiceLookupClient
+# and IID_IMFTopologyServiceLookupClient; add -Wl,--allow-multiple-definition to workaround conflicts with
+# strmiids which contains symbols also required but not provided by amstrmid
 mingw {
-    LIBS_PRIVATE += -lamstrmid
+    LIBS_PRIVATE += -Wl,--allow-multiple-definition -lamstrmid
 }
 
 include(common/common.pri)
